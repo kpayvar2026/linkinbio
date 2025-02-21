@@ -4,58 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Link-in-Bio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: linear-gradient(180deg, #00416A, #799F0C, #FFE000);
+            font-family: "Raleway", sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 40px;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 640px;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        .name {
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .link-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        .link-item:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .thumbnail {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+    </style>
 </head>
-<style>
-  body {
-      background: linear-gradient(180deg, #1f005c, #5b0060, #870160, #ac255e);
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-  }
-  .avatar-image {
-      width: 128px;
-      height: 128px;
-      border-radius: 50%;
-      object-fit: cover;
-  }
-  .item {
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: 10px;
-      border-radius: 10px;
-      margin: 10px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 300px;
-  }
-  .thumbnail {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      margin-right: 10px;
-  }
-</style>
 <body>
-  <div class="main-container">
-      <div class="image-row">
-          <img class="avatar-image" src="profile.jpg" alt="Kyle Payvar">
-      </div>
-      <div class="name-row">
-          
-      </div>
-      <div class="social-icons-row">
-          <a href="https://github.com/kpayvar2026" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/kylepayvar/" target="_blank">LinkedIn</a>
-      </div>
-      <div class="links-row">
-          <div class="item">
-            <img src="kyle-hinkson-t9g8NvThTHY-unsplash (1).jpg" alt="Background Image">
-              <a target="_blank" href="/workspaces/linkinbio/the-chaffins-d49_soO1BWg-unsplash.jpg">My Project</a>
-          </div>
-          <div class="item">
-            <img src="lorin-both-dePcyxfAJy8-unsplash (1).jpg" alt="Background Image">
-              <a target="_blank" href="/workspaces/linkinbio/the-chaffins-d49_soO1BWg-unsplash.jpg">Another Link</a>
-          </div>
-      </div>
-  </div>
+
+<div class="main-container">
+    <div class="profile">
+        <img class="avatar" src="images/avatar.jpg" alt="Profile Image">
+        <div class="name">Your Name</div>
+        <div class="social-icons">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/yourusername" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="link-list">
+        <a class="link-item" href="https://example.com" target="_blank">
+            <img class="thumbnail" src="images/term1.jpg" alt="Thumbnail">
+            Term 1
+        </a>
+        <a class="link-item" href="https://example.com" target="_blank">
+            <img class="thumbnail" src="images/term2.jpg" alt="Thumbnail">
+            Term 2
+        </a>
+        <a class="link-item" href="https://example.com" target="_blank">
+            <img class="thumbnail" src="images/term3.jpg" alt="Thumbnail">
+            Term 3
+        </a>
+    </div>
+</div>
+
 </body>
+</html>
